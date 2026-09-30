@@ -1,59 +1,273 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Real Estate CRM System
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A web-based **Real Estate Customer Relationship Management (CRM) System** developed using **Laravel, PHP, MySQL, Blade, Bootstrap, HTML, CSS, and JavaScript**.
 
-## About Laravel
+The system is designed to help real estate consultants manage properties, clients, leads, site visits, deals, billing, reports, users, reminders, and client interactions through a centralized web application.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Project Overview
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+The Real Estate CRM System provides role-based access for different users involved in real estate operations.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+The application includes an administrative management panel and a client portal. It helps manage the complete workflow from property and lead management to site visits, deals, billing, and client services.
 
-## Learning Laravel
+## Features
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+### 1. Authentication & Role-Based Access
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- User authentication and login
+- Role-based access control
+- Admin role
+- Agent role
+- Accountant role
+- Client role
+- Role-specific dashboard redirection
+- Protected modules using authorization middleware
 
-## Laravel Sponsors
+### 2. Dashboard
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+- Dashboard overview
+- Property statistics
+- Client statistics
+- Lead information
+- Deal information
+- Billing information
+- Role-specific dashboards
 
-### Premium Partners
+### 3. Property Management
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+- Add properties
+- Edit properties
+- View property details
+- Delete properties
+- Property status management
+- Property search and filtering
+- Property images
+- Property documents
+- Property videos
 
-## Contributing
+### 4. Client Management
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- Add clients
+- Edit client information
+- View client profiles
+- Delete clients
+- Client search and filtering
+- VIP client filtering
+- Client-property interaction
+- Client-related site visits
 
-## Code of Conduct
+### 5. Lead Management
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+- Create and manage leads
+- Lead status tracking
+- Lead search and filtering
+- Lead follow-up management
+- Lead assignment
 
-## Security Vulnerabilities
+### 6. Site Visit Management
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+- Schedule site visits
+- Manage site visit information
+- Associate site visits with clients
+- Track visit status
+- Client site-visit requests
+- Manage site visits from the admin panel
 
-## License
+### 7. Deal Management
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+- Create and manage deals
+- Track deal status
+- Agent information
+- Deal updates
+- Booking and sale information
+- Commission-related information
+
+### 8. Billing & Payment Management
+
+- Create and manage billing records
+- Advance payment tracking
+- Final payment tracking
+- Due amount tracking
+- Payment status management
+- Invoice generation
+- Commission-related information
+
+### 9. Reports
+
+- Generate CRM reports
+- Search and filter report data
+- View business-related information
+- Generate PDF reports
+
+### 10. User Management
+
+- Add users
+- Edit users
+- View users
+- Delete users
+- Manage user roles
+- Role-based access management
+
+### 11. Client Portal
+
+Clients can:
+
+- Log in securely
+- View available properties
+- View property details
+- View bookings
+- View payment information
+- View updates
+- Request site visits
+- Access client-specific information
+
+### 12. Audit Logs
+
+- Record important system activities
+- Track user actions
+- Maintain activity records
+
+### 13. Reminders
+
+- Create reminders
+- Manage reminders
+- Track follow-up activities
+
+### 14. Communication Records
+
+- Record communication activities
+- Manage communication information
+- Maintain client-related communication records
+
+## User Roles
+
+The system provides different functionality based on the user's role.
+
+| Role | Main Responsibilities |
+|------|-----------------------|
+| Admin | Manage users, properties, clients, leads, deals, billing and reports |
+| Agent | Manage leads, clients, properties and site visits |
+| Accountant | Manage billing and payment-related information |
+| Client | View properties, bookings, payments and updates |
+
+## Technology Stack
+
+| Technology | Purpose |
+|------------|---------|
+| Laravel | Backend web framework |
+| PHP | Server-side programming |
+| MySQL | Database |
+| Blade | Server-side templating |
+| Bootstrap 3.4 | User interface and responsive design |
+| HTML5 | Web page structure |
+| CSS3 | Styling |
+| JavaScript | Client-side functionality |
+| XAMPP | Local development environment |
+| VS Code | Development environment |
+| Git | Version control |
+| GitHub | Source code repository |
+
+## Architecture
+
+The application follows the **Laravel MVC (Model-View-Controller) architecture**.
+
+### Model
+
+Handles database entities, relationships, and data interaction.
+
+### View
+
+Uses Laravel Blade templates to provide the user interface.
+
+### Controller
+
+Handles application requests, business logic, validation, and communication between models and views.
+
+### Routes
+
+Defines the application's web routes and module access.
+
+### Middleware
+
+Handles authentication and role-based authorization.
+
+### Migrations
+
+Manages the structure of the MySQL database.
+
+## Main Modules
+
+The system includes the following major modules:
+
+1. Authentication & Role-Based Access
+2. Dashboard
+3. Property Management
+4. Client Management
+5. Lead Management
+6. Site Visit Management
+7. Deal Management
+8. Billing & Commission Management
+9. Reports
+10. User Management
+11. Client Portal
+12. Audit Logs
+13. Reminders
+14. Communication Records
+
+## Project Structure
+
+```text
+real-estate-crm/
+│
+├── app/
+│   ├── Http/
+│   │   ├── Controllers/
+│   │   └── Middleware/
+│   ├── Mail/
+│   ├── Models/
+│   └── Providers/
+│
+├── bootstrap/
+│
+├── config/
+│
+├── database/
+│   ├── factories/
+│   ├── migrations/
+│   └── seeders/
+│
+├── public/
+│   ├── property-images/
+│   └── ...
+│
+├── resources/
+│   ├── css/
+│   ├── js/
+│   └── views/
+│
+├── routes/
+│
+├── storage/
+│
+├── tests/
+│
+├── .env.example
+├── artisan
+├── composer.json
+├── composer.lock
+├── package.json
+└── README.md
+
+## Internship Project
+
+This Real Estate CRM System was developed as part of my **Software Engineer Internship at Udupi Web Solutions**.
+
+The project involved developing a web-based CRM application for managing real estate properties, clients, leads, site visits, deals, billing, reports, and client interactions using Laravel, PHP, MySQL, Bootstrap, HTML, CSS, and JavaScript.
+
+## Author
+
+**Chithra V Kamath**
+
+MCA Graduate
+
+GitHub: https://github.com/chithravkamath
